@@ -9,7 +9,7 @@ end
 
 test_array = [1,2,3,4]
 string_test = ["blake", "ashley", "scott"]
-#swap_elements(test_array)
+
 
 def swap_elements_from_to(array, index, new_index)
   array[index], array[new_index] = array[new_index], array[index]
@@ -22,7 +22,7 @@ describe 'swap_elements_from_to' do
   end
 end
 
-############################################
+
 
 
 
@@ -44,12 +44,9 @@ def find_a(array)
   end
 end
 
-#a_array = ["apple","bake","ceaser","avocado"]
-#find_a(a_array)
 
 def sum_array(array)
-  #Advanced: Try using the .inject method here.
-  #(5..10).inject {|sum, n| sum + n }    
+     
   sum = 0
   array. each do |number|
     if number.is_a? Integer
@@ -66,10 +63,7 @@ def sum_array_inject(array)
 end
 
 number_array =[0,1.07,2,3,4,5.2,6]
-#sum_array(number_array)
 
-#puts number_array.inject {|sum, n| sum + n}
-#sum_array_inject(number_array)
 
 def add_s(array)
   #Build a method that adds an "s" to each word in the array except for the second element in the array ("feet" is already plural).
